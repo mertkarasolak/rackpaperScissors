@@ -8,7 +8,6 @@ body {
     color: #ffffff;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     
-    /* Yeni estetik arka plan */
     background: radial-gradient(at 10% 20%, rgba(12, 43, 39, 1) 0%, transparent 60%),
                 radial-gradient(at 90% 15%, rgba(32, 178, 170, 0.6) 0%, transparent 50%),
                 radial-gradient(at 50% 85%, rgba(0, 90, 54, 0.8) 0%, transparent 70%),
