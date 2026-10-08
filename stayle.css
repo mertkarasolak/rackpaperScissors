@@ -1,14 +1,28 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    margin-top: 12em;
-    background: linear-gradient(to right, rgb(39, 133, 128),green);
-
+    margin: 0;
+    padding-top: 12em;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
+    /* Yeni estetik arka plan */
+    background: radial-gradient(at 10% 20%, rgba(12, 43, 39, 1) 0%, transparent 60%),
+                radial-gradient(at 90% 15%, rgba(32, 178, 170, 0.6) 0%, transparent 50%),
+                radial-gradient(at 50% 85%, rgba(0, 90, 54, 0.8) 0%, transparent 70%),
+                radial-gradient(at 80% 80%, rgba(163, 226, 177, 0.45) 0%, transparent 40%),
+                radial-gradient(at 15% 85%, rgba(12, 77, 64, 0.9) 0%, transparent 50%),
+                #061e1b;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h2 {
     margin-bottom: 10px;
-    text-align: 75px;
+    
 }
 
 #opponent-choice, #user-choice, #decision {
@@ -32,14 +46,16 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.63);
     padding: 27px 42px;
 }
+
 button:active {
     background-color: #0000007e;
 }
-@media only screen and (max-width: 400px){
-     body {
+
+@media only screen and (max-width: 400px) {
+    body {
         font-size: 1em;
         text-align: center;
-        margin-top: 5em;
+        padding-top: 5em;
     }
 
     button {
@@ -50,7 +66,6 @@ button:active {
 
     h2 {
         margin-bottom: 2px;
-        text-align: 75px;
     }
 
     #opponent-choice, #user-choice, #decision {
